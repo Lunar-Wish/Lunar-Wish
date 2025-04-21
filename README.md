@@ -1,4 +1,5 @@
-## Hi there 👋
+## Copyright (c) 2025 Lunar Wish. All rights reserved.
+
 
 <!--
 **Lunar-Wish/Lunar-Wish** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
