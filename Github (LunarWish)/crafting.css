@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header Section Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Crafting Section Styling */
+#crafting .container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Crafting Item Styling */
+.product-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Individual Crafting Item Styling */
+.crafting-item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px; /* Fixed width for each item */
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Crafting Items */
+.crafting-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Square Box for Crafting Image */
+.crafting-image-container {
+    width: 200px; /* Set the width for the square box */
+    height: 200px; /* Set the height for the square box */
+    margin-bottom: 15px;
+    border-radius: 8px; /* Optional: Round the corners of the box */
+    overflow: hidden; /* Ensure the image doesn't overflow out of the box */
+    position: relative; /* Ensure the image stays within the box */
+}
+
+/* Crafting Image Styling (Inside the Square Box) */
+.crafting-image {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Make the image take the full height of the container */
+    object-fit: cover; /* Ensure the image covers the box without stretching */
+    border-radius: 8px; /* Optional: Round the image's corners to match the container */
+}
+
+/* Title Styling */
+.crafting-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFD700; /* Golden color for titles */
+}
+
+/* Description Styling */
+.crafting-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Price Styling */
+.crafting-item p:last-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFD700; /* Golden color for price */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Make crafting items stack into a column on smaller screens */
+    .product-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crafting-item {
+        width: 80%; /* Reduce the width for mobile */
+    }
+
+    /* Square box size for mobile */
+    .crafting-image-container {
+        width: 120px; /* Smaller box size for mobile */
+        height: 120px; /* Maintain aspect ratio */
+    }
+}
